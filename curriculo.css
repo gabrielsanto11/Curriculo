@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+    padding: 30px;
+}
+
+/* CURRÍCULO */
+
+.curriculo {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 1050px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/*LATERAL */
+
+.lateral {
+    background-color: #252bc4;
+    color: white;
+}
+
+.nome {
+    padding: 25px 20px;
+}
+
+.nome h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.nome p {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+/* FOTO */
+
+.foto {
+    padding: 0 18px 15px;
+}
+
+.foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+
+/* SEÇÕES DA LATERAL */
+
+.lateral-secao {
+    padding-bottom: 20px;
+}
+
+.lateral-secao h2 {
+    background-color: #20228f;
+    padding: 8px 18px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.lateral-secao h3 {
+    font-size: 14px;
+    padding: 0 18px;
+    margin-bottom: 5px;
+}
+
+.lateral-secao p {
+    padding: 0 18px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.contato {
+    margin-top: 5px;
+}
+
+
+/*CONTEÚDO*/
+
+.conteudo {
+    background-color: white;
+}
+
+
+/* CABEÇALHO */
+
+.conteudo header {
+    padding: 25px 25px 15px;
+}
+
+.conteudo header h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.resumo {
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: justify;
+}
+
+.atualizacao {
+    text-align: right;
+    color: #999;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    margin-bottom: 0;
+}
+
+.secao h2 {
+    background-color: #ddddE8;
+    padding: 7px 20px;
+    font-size: 17px;
+    color: #111;
+}
+
+.item {
+    padding: 10px 20px 3px;
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+
+/* HABILIDADES */
+
+.secao ul {
+    padding: 10px 20px 20px 38px;
+}
+
+.secao li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .curriculo {
+        display: block;
+        width: 100%;
+    }
+
+    .lateral {
+        width: 100%;
+    }
+
+    .nome {
+        text-align: center;
+    }
+
+    .foto {
+        width: 220px;
+        margin: auto;
+    }
+
+    .foto img {
+        height: 220px;
+    }
+
+    .conteudo header h1 {
+        font-size: 30px;
+    }
+
+    .resumo {
+        text-align: left;
+    }
+}
